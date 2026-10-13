@@ -1,6 +1,6 @@
 # 🔤 Coptic Transliterator
 
-> An offline-first web & mobile app that transliterates Coptic text to Latin script (Greco-Bohairic conventions), so English speakers can follow along with Coptic Orthodox services. The successor to the [Streamlit tool](https://github.com/shehata-consulting/coptic-transliterator-llm), rebuilt as an Expo PWA.
+> An offline-first web & mobile app that transliterates Coptic text to Latin script (Greco-Bohairic conventions), so English speakers can follow along with Coptic Orthodox services. The successor to the [Streamlit tool](https://github.com/shehatam-dev/coptic-transliterator-llm), rebuilt as an Expo PWA.
 
 ## ✨ Features
 
@@ -32,7 +32,7 @@ Requires Node 24 (`.nvmrc`; direnv sets it up automatically in this workspace).
 
 If you use the transliteration rules in research, please cite:
 
-> [Coptic Transliteration Tool](https://github.com/shehata-consulting/coptic-transliterator/blob/master/Coptic%20Transliteration%20Tool.pdf), May 2020, Michael Shehata, Montclair State University of New Jersey, U.S.
+> [Coptic Transliteration Tool](https://github.com/shehatam-dev/coptic-transliterator/blob/master/Coptic%20Transliteration%20Tool.pdf), May 2020, Michael Shehata, Montclair State University of New Jersey, U.S.
 
 ## License
 
