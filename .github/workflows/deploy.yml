@@ -26,6 +26,10 @@ jobs:
         env:
           FIREBASE_SECRET: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: echo "$FIREBASE_SECRET" > "$RUNNER_TEMP/sa.json"
-      - run: npx firebase-tools deploy --only hosting --project coptic-transliterator-app
+      # Pinned: firebase-tools 15.34.1 (Oct 21 2026) added a Service Usage lookup
+      # the deploy service account has no permission for (403 on
+      # serviceusage.googleapis.com), so an unpinned npx broke every deploy.
+      # Bump deliberately, watching the first deploy after.
+      - run: npx firebase-tools@15.34.0 deploy --only hosting --project coptic-transliterator-app
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/sa.json
